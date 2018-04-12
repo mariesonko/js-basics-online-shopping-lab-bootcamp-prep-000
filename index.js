@@ -22,11 +22,11 @@ function viewCart() {
   if (cart.length === 0){
     return ("Your shopping cart is empty.")
   }else {
-    var newCart= []
+    var myCart= []
     cart.forEach(function(cart, index){
-      newCart.push (index + "item - " + cart )
+      myCart.push ((`${Object.keys(cart[index])} at $${cart[i] [price]}`) + (index +1) + "item - " + cart )
     })
-    return ("in your cart, you have " + newCart.join (", ") + ".")
+    return ("In your cart, you have " + myCart.join (", ") + ".")
   }
 }
 
