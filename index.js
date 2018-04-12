@@ -9,8 +9,8 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) 
-var newItem = getCart()[0].itemName 
+function addToCart(item)
+var newItem = getCart()[0].itemName
   var item = new Object(newItem : name)
   var price = Math.floor(Math.random()*100)
   cart.push ({[item]:price})
