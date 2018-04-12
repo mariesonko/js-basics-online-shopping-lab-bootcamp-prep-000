@@ -21,10 +21,11 @@ function viewCart() {
     return ("Your shopping cart is empty.")
   }else {
     var myCart= []
-    cart.forEach(function(cart, i){
-      myCart.push ((`${Object.keys(cart[i])} at $${cart[i] [price]}`) + (i +1) + "item - " + cart )
+    cart.forEach(getCart(){
+      myCart.push (`In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.` )
     })
-    return ("In your cart, you have " + myCart.join (", ") + ".")
+    return (`In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice},
+            and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`)
   }
 }
 
@@ -35,7 +36,7 @@ function total() {
       addTotal += cart[i][item]
     }
   }
-  return addTotal 
+  return addTotal
 }
 
 function removeFromCart(item) {
