@@ -29,7 +29,13 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var addTotal;
+  for (var i= 0; i< cart.length; i++){
+    for (var item in cart[i]) {
+      addTotal += cart[i][item]
+    }
+  }
+  return addTotal 
 }
 
 function removeFromCart(item) {
@@ -43,5 +49,11 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  var emptyCart = []
+  if ( cardNumber !== cardNumber){
+    console.log ("Sorry, we don't have a credit card on file for you.")
+  }else {
+    console.log( `Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`)
+  }
+  setCart (emptyCart)
 }
