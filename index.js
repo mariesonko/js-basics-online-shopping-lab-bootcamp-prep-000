@@ -60,3 +60,4 @@ function placeOrder(cardNumber) {
   }
   setCart (emptyCart)
 }
+}
