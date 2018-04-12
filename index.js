@@ -22,7 +22,7 @@ function viewCart() {
   }else {
     var myCart= []
     cart.forEach(function(cart, index){
-      myCart.push ((`${Object.keys(cart[index])} at $${cart[i] [price]}`) + (index +1) + "item - " + cart )
+      myCart.push ((`${Object.keys(cart[index])} at $${cart[index] [price]}`) + (index +1) + "item - " + cart )
     })
     return ("In your cart, you have " + myCart.join (", ") + ".")
   }
