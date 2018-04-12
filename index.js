@@ -25,7 +25,7 @@ function viewCart() {
   }else {
     var myCart= []
     cart.forEach(getCart(itemName, itemPrice)
-      myCart.push (`In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.` )
+      myCart.push (`In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`)
     })
     return (`In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice},
             and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`)
